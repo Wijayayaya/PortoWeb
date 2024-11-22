@@ -1,0 +1,117 @@
+/* Home.css */
+.home {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Gaya untuk teks "Hello I'm" */
+.text-subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fdc11f;
+  /* margin-bottom: 8px; */
+}
+
+/* Gaya untuk nama besar */
+.text-title {
+  font-size: 56px;
+  font-weight: 900;
+  color: #27272c;
+  /* margin: 0; */
+}
+
+/* Gaya untuk bagian typed */
+.text-typed {
+  font-size: 24px;
+  font-weight: bold;
+  /* margin-top: 8px; */
+  color: #fdc11f;
+}
+
+.btn {
+  /* border: 0;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  transition: transform 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1); /* Efek zoom saat di-hover */
+}
+
+.btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Menambahkan jarak antara teks dan ikon */
+}
+
+/* Gaya untuk ikon sosial media */
+.social-icons {
+  display: flex;
+  justify-content: start;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.social-icon {
+  font-size: 32px;
+  color: #27272c; /* Warna ikon */
+  background-color: #fdc11f; /* Warna latar belakang */
+  border-radius: 50%; /* Membuat latar belakang bulat */
+  width: 50px; /* Menentukan lebar yang sama */
+  height: 50px; /* Menentukan tinggi yang sama */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi transisi */
+}
+
+.social-icon:hover {
+  background-color: #e0a800; /* Warna latar belakang saat di-hover */
+  transform: scale(1.1); /* Efek zoom saat di-hover */
+}
+
+@media (max-width: 768px) {
+  .text-title {
+    font-size: 36px; /* Ukuran untuk layar kecil */
+  }
+
+  .social-icons {
+    justify-content: center; /* Pusatkan ikon sosial media */
+  }
+
+  .col-md-6 {
+    margin-top: 20px;
+    text-align: center; /* Pusatkan teks */
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Elemen dalam keadaan default (tidak terlihat) */
+.slide-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 1s ease;
+}
+
+/* Elemen terlihat jika ada kelas 'active' */
+.slide-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}

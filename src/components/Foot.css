@@ -1,0 +1,37 @@
+/* Foot.css */
+footer {
+  margin-top: 100px;
+  padding: 20px 0; /* Padding atas dan bawah */
+  text-align: center; /* Teks rata tengah */
+  border-top: 1px solid black;
+}
+
+ .icons  {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 24px 0px;
+}
+
+footer .icons a:hover {
+  transform: scale(1.2); /* Perbesar ikon saat hover */
+}
+
+footer .navlinks a {
+  color: #27272c; /* Warna teks navigasi */
+  text-decoration: none;
+  margin: 0 10px; /* Spasi antar tautan */
+  font-weight: bold; /* Tebalkan teks */
+  transition: color 0.3s, transform 0.3s ease; /* Efek transisi perubahan warna */
+}
+
+footer .navlinks a:hover {
+    color: #fdc11f !important;
+    transform: scale(1.2);
+}
+
+footer p {
+  color: #27272c; /* Warna teks copyright */
+  margin: 0; /* Hilangkan margin bawah */
+  font-size: 0.9rem; /* Ukuran teks kecil */
+}

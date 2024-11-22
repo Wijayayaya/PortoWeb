@@ -1,0 +1,139 @@
+.skills-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  gap: 40px; /* Jarak antar baris kelompok ikon */
+  padding: 20px 0; /* Ruang atas dan bawah container */
+  flex-direction: column;
+  display: flex;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  color: #27272c;
+  margin-bottom: 50px;
+}
+
+.skills-icons-right {
+  display: flex;
+  gap: 30px;
+  animation: scroll-right 15s linear infinite; /* Animasi tanpa henti */
+  white-space: nowrap; /* Elemen dalam satu baris */
+  animation-play-state: running;
+  will-change: auto;
+  transform: none;
+}
+
+.skills-icons-right:hover {
+  animation-play-state: paused; /* Jeda animasi saat di-hover */
+  cursor: pointer;
+}
+.skills-icons-left {
+  display: flex;
+  gap: 30px;
+  animation: scroll-left 15s linear infinite; /* Animasi tanpa henti */
+  white-space: nowrap; /* Elemen dalam satu baris */
+  animation-play-state: running;
+  will-change: auto;
+  transform: none;
+}
+
+.skills-icons-left:hover {
+  animation-play-state: paused; /* Jeda animasi saat di-hover */
+  cursor: pointer;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px; /* Lebar tetap */
+  height: 120px; /* Tinggi tetap */
+  font-size: 24px;
+  color: inherit;
+  background-color: #27272c; /* Latar belakang */
+  border-radius: 10px; /* Membulatkan sudut */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+  flex-shrink: 0; /* Jangan mengecilkan elemen */
+  text-align: center; /* Pusatkan teks */
+  overflow: hidden; /* Hindari konten melampaui elemen */
+  font-weight: bold;
+}
+
+.skill-item:hover {
+  transform: scale(1.2);
+  /* color: inherit; */
+}
+
+.skill-icon {
+  font-size: 40px; /* Ukuran ikon */
+  margin-bottom: 10px; /* Jarak antara ikon dan teks */
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+  transform: scale(1.2);
+  /* color: #ff6347; */
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0); /* Posisi awal */
+  }
+  100% {
+    transform: translateX(-50%); /* Pindah setengah dari total panjang */
+  }
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(-50%); /* Posisi awal */
+  }
+  100% {
+    transform: translateX(0); /* Pindah setengah dari total panjang */
+  }
+}
+
+.skill-item span {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-item:hover span {
+  opacity: 1;
+}
+
+/* Animasi slide-in */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Elemen dalam keadaan default (tidak terlihat) */
+.slide-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 1s ease;
+}
+
+/* Elemen terlihat jika ada kelas 'active' */
+.slide-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+

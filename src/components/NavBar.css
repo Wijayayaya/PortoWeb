@@ -1,0 +1,44 @@
+  .navbar {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #27272c;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  border: none;
+  background: none;
+}
+
+.navbar-toggler .fa-bars,
+.navbar-toggler .fa-times {
+  font-size: 1.25rem;
+}
+
+.navbar-collapse.show {
+  display: block !important;
+}
+
+.nav-item {
+  margin: 0 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #fdc11f;
+}
+
+.nav-link {
+  color: #27272c;
+  transition: color 0.3s ease, transform 0.3s ease !important; /* Smooth transition */
+}
+
+.nav-link:hover {
+  color: #fdc11f !important;
+  transform: scale(1.2);
+}

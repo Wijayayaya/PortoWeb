@@ -1,0 +1,51 @@
+/* Card Styling */
+
+.card-container {
+  height: 150vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #27272c;
+  margin-bottom: 50px;
+}
+
+.card {
+  transition: transform 0.3s ease; /* Tambahkan efek transisi untuk hover */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card p {
+  flex-grow: 1;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: scale(1.03); /* Membesarkan kartu saat hover */
+}
+
+/* Animasi slide-in */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
