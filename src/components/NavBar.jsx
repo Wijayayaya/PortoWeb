@@ -16,9 +16,6 @@ const NavBar = () => {
   return (
     <div className="container-fluid">
       <nav className="navbar navbar-expand-md my-5 align-items-center">
-        <a className="navbar-brand" href="#home">
-          Pandu
-        </a>
         <button className="navbar-toggler" type="button" onClick={() => setNav(!nav)}>
           {nav ? <FaTimes className="fa-times" /> : <FaBars className="fa-bars" />}
         </button>
