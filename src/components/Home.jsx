@@ -23,13 +23,13 @@ const Home = () => {
             <p className="text-typed mt-3">
               <ReactTyped strings={["Junior Front End Developer", "Junior React Developer"]} typeSpeed={70} backSpeed={70} loop />
             </p>
-            <button className="btn btn-warning flex align-items-center justify-content-center mt-10">
-              <a href="/cv.docx" download="cv.docx" style={{ textDecoration: "none", color: "inherit" }}>
+            <a href="/cv.docx" download="cv.docx" style={{ textDecoration: "none", color: "inherit" }}>
+              <button className="btn btn-warning flex align-items-center justify-content-center mt-10">
                 <span>
                   Download CV <FaArrowDown />
                 </span>
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
 
           {/* Bagian Foto Profil */}

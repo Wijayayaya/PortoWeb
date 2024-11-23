@@ -46,19 +46,19 @@ form h1 {
 form button{
     width: 100%;
     height: 55px;
-    background: #1f3dfd;
+    background: #fdc11f;
     border: none;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     cursor: pointer;
     font-size: 16px;
-    color: #fff;
+    color: #27272c;
     font-weight: 500;
     margin-top: 25px ;
 }
 
 form button:hover{
-    background: #182cb1;
+    background: #cc9c18;
 }
 
 /* Animasi slide-in */
